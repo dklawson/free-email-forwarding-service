@@ -1,0 +1,20 @@
+
+version: "3.7"
+
+services:
+
+  redis:
+    image: redis
+    restart: on-failure
+# TODO: Doc we need a redis.conf?
+#    configs:
+#      - source: redis_conf
+#        target: /usr/local/etc/redis.conf
+#    command: redis /usr/local/etc/redis.conf
+
+
+
+# TODO: Doc we need a redis.conf?
+#configs:
+#  redis_conf:
+#    file: docker/redis/redis.conf
